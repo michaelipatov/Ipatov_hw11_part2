@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск кандидатов по имени</title>
+</head>
+<body>
+<h1>Найдено кандидатов</h1>
+{% for key, value in name_dict.items() %}
+    <p><a href="/candidates/{{key}}">{{ value }}</a></p>
+{% endfor %}
+</body>
+</html>
